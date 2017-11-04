@@ -5,7 +5,7 @@ router.get('/:prenom([a-z]+)', function(req, res, next){
 	res.render('update-user');
 });
 router.put('/:prenom([a-z]+)', function(req, res, next) {
-	res.send('The new name is ' + req.params.prenom);
+	res.send('The new name is ' + req.body.text);
 });
 
 
